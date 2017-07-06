@@ -1,50 +1,81 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 import { Link } from 'react-router-native';
 
 import colors from '../../style/color';
 
+// 样式文件
+import common from '../../style/common';
+import styles from '../../style/nav-bottom';
+
+// 自定义组件
+import { AbsBottomView, WhiteText, SmallWhiteText, FlexView } from '../../styled';
+
 class NavBottom extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    console.log()
+  }
+
   render() {
     return (
-      <View>
-        <Link to='/' underlayColor={colors.eee}>
-          <View>
-            <Text>首页</Text>
-            <Text>Home</Text>
-          </View>
+      <AbsBottomView>
+        <Link to='/'
+          underlayColor={colors.c000}
+          style={styles.link_style}>
+          <FlexView>
+            <WhiteText>首页</WhiteText>
+            <SmallWhiteText style={common.mg_top2}>
+              Home
+            </SmallWhiteText>
+          </FlexView>
         </Link>
-        <Link to='/news' underlayColor={colors.eee}>
-          <View>
-            <Text>资讯</Text>
-            <Text>News</Text>
-          </View>
+        <Link to='/news'
+          underlayColor={colors.c000}
+          style={styles.link_style}>
+          <FlexView>
+            <WhiteText>资讯</WhiteText>
+            <SmallWhiteText style={common.mg_top2}>
+              News
+            </SmallWhiteText>
+          </FlexView>
         </Link>
-        <Link to='/portfolio' underlayColor={colors.eee}>
-          <View>
-            <Text>自选</Text>
-            <Text>Portfolio</Text>
-          </View>
+        <Link to='/portfolio'
+          underlayColor={colors.c000}
+          style={styles.link_style}>
+          <FlexView>
+            <WhiteText>自选</WhiteText>
+            <SmallWhiteText style={common.mg_top2}>
+              Portfolio
+            </SmallWhiteText>
+          </FlexView>
         </Link>
-        <Link to='/markets' underlayColor={colors.eee}>
-          <View>
-            <Text>行情</Text>
-            <Text>Markets</Text>
-          </View>
+        <Link to='/markets'
+          underlayColor={colors.c000}
+          style={styles.link_style}>
+          <FlexView>
+            <WhiteText>行情</WhiteText>
+            <SmallWhiteText style={common.mg_top2}>
+              Markets
+            </SmallWhiteText>
+          </FlexView>
         </Link>
-        <Link to='/trade' underlayColor={colors.eee}>
-          <View>
-            <Text>交易</Text>
-            <Text>Trade</Text>
-          </View>
+        <Link to='/trade'
+          underlayColor={colors.c000}
+          style={styles.link_style}>
+          <FlexView>
+            <WhiteText>交易</WhiteText>
+            <SmallWhiteText style={common.mg_top2}>
+              Trade
+            </SmallWhiteText>
+          </FlexView>
         </Link>
-      </View>
+      </AbsBottomView>
     );
   }
 }
-
-let styles = StyleSheet.create({
-
-})
 
 export default NavBottom;

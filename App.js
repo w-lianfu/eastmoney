@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
       <NativeRouter>
         <View>
-          <Route path='/' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route path='/news' component={News} />
           <Route path='/portfolio' component={Portfolio} />
           <Route path='/markets' component={Markets} />
