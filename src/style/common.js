@@ -14,7 +14,7 @@ const common = StyleSheet.create({
     paddingTop: 20,
     paddingLeft: 10,
     paddingRight: 10,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgb(239, 239, 244)',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -32,7 +32,7 @@ const common = StyleSheet.create({
   container: {
     height: '100%',
     marginTop: 50,
-    backgroundColor: '#eee'
+    backgroundColor: '#fff'
   }
 })
 
