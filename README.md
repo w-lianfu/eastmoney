@@ -6,4 +6,4 @@
 
 <p>exp start</p>
 <p>首页截图</p>
-![首页](https://ws3.sinaimg.cn/large/006tKfTcgy1fhfz4ofhzrj30ku1220ug.jpg)
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1fhfzle55slj30iu0y6q4u.jpg)
